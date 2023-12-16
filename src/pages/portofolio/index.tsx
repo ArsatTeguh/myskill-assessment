@@ -5,7 +5,7 @@ import { PortoState } from '@/lib/type';
 
 function PortofolioPage({ data }: { data: PortoState }) {
   return (
-    <div className="w-[900px] mx-auto py-5">
+    <div className="md:w-[900px] px-4 md:px-0 w-full mx-auto  py-5">
       {data ? (
         <MainPortofolio data={data} />
       ) : (

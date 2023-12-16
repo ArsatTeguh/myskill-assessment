@@ -67,7 +67,7 @@ function MainForm() {
   }, [dispatch]);
 
   return (
-    <div className="relative px-4">
+    <div className="relative px-4 w-full">
       {typeAlert.trim() !== '' ? <NotifyAlert type={typeAlert} /> : null}
       <div className="flex flex-col gap-4 py-8">
         <ActionButton
@@ -99,7 +99,7 @@ function MainForm() {
           ))}
         </div>
       </div>
-      <div className="absolute right-2 top-[6rem] w-[500px]  ">
+      <div className="absolute hidden lg:block right-2 top-[6rem] w-[500px]  ">
         <Preview />
       </div>
     </div>

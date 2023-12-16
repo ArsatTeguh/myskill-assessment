@@ -7,16 +7,16 @@ function Navbar({ children }: { children: ReactNode }) {
   return (
     <div className="">
       <nav className="w-full py-3 flex justify-between px-5 bg-[#10A4B0]">
-        <p className="text-lg font-bold text-white">MYSKILL - Arsat Teguh</p>
+        <p className="text-lg font-bold hidden md:block text-white">MYSKILL - Arsat Teguh</p>
         <div className="flex items-center gap-6 font-semibold text-white">
           <Link
-            className={`${pathname !== '/' ? ' text-zinc-600' : ''}`}
+            className={`${pathname !== '/' ? ' text-zinc-700' : ''}`}
             href="/"
           >
             Form
           </Link>
           <Link
-            className={`${pathname !== '/portofolio' ? 'text-zinc-600' : ''}`}
+            className={`${pathname !== '/portofolio' ? 'text-zinc-700' : ''}`}
             href="/portofolio"
           >
             Portofolio

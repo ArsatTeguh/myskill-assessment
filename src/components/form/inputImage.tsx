@@ -53,7 +53,7 @@ function InputImage({
   const { getRootProps, getInputProps, isDragActive } = useDropzone(dropzoneOptions);
 
   return (
-    <div className="w-[810px] h-[344px] py-6 bg-white shadow px-6 block rounded">
+    <div className="md:w-[810px] w-full mx-auto md:mx-0 h-[344px] py-6 bg-white shadow px-6 block rounded">
       <div className="flex items-center justify-between py-1">
         <p className="text-base font-semibold">{title}</p>
       </div>

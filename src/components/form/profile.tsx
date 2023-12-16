@@ -11,7 +11,7 @@ type Props = {
 
 function Profile({ handler, formData }: Props) {
   return (
-    <div className="w-[810px]  h-[344px] py-6 bg-white shadow px-6 block  rounded">
+    <div className="md:w-[810px] w-full mx-auto md:mx-0 h-[344px] py-6 bg-white shadow px-6 block  rounded">
       <div className="flex items-center justify-between py-1">
         <p className="text-base font-semibold">Profile</p>
         <Image src="/IconButton.svg" alt="icon button" width={40} height={40} />

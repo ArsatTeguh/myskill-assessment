@@ -11,17 +11,17 @@ function ActionButton({
   submit, add, load, check,
 }: Props) {
   return (
-    <div className="w-[810px] flex items-center gap-4">
+    <div className="md:w-[810px] w-full mx-auto md:mx-0 flex items-center gap-4">
       <button
         type="button"
-        className="py-[11px] px-[22px] border rounded border-[#10A4B0] font-semibold text-[15px] text-[#10A4B0]"
+        className="py-[11px] px-3 md:px-[22px] border rounded border-[#10A4B0] font-semibold md:text-[15px] text-[13px] text-[#10A4B0]"
         onClick={add}
       >
         + Add Portofolio
       </button>
       <button
         type="button"
-        className="py-[11px] z-10 px-[22px] border rounded bg-[#10A4B0] font-semibold text-[15px] text-white disabled:bg-secondary disabled:text-zinc-400"
+        className="py-[11px] z-10 px-3  md:px-[22px] border rounded bg-[#10A4B0] font-semibold md:text-[15px] text-[13px] text-white disabled:bg-secondary disabled:text-zinc-400"
         onClick={submit}
         disabled={load || check}
       >
