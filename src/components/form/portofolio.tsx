@@ -13,7 +13,7 @@ function Portofolio({
   index, data, handler, remove,
 }: Props) {
   return (
-    <div className="md:w-[810px] w-full mx-auto md:mx-0 h-[540px] py-6 bg-white shadow px-6 block rounded">
+    <div data-testid="porto" className="md:w-[810px] w-full mx-auto md:mx-0 h-[540px] py-6 bg-white shadow px-6 block rounded">
       <div className="flex items-center justify-between py-1">
         <p className="text-base font-semibold">Portofolio {index} </p>
         <div className="flex items-center gap-2">

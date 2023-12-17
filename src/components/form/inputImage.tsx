@@ -55,7 +55,7 @@ function InputImage({
   return (
     <div className="md:w-[810px] w-full mx-auto md:mx-0 h-[344px] py-6 bg-white shadow px-6 block rounded">
       <div className="flex items-center justify-between py-1">
-        <p className="text-base font-semibold">{title}</p>
+        <p data-testid="label-image" className="text-base font-semibold">{title}</p>
       </div>
       <div
         className={`w-full h-[248px] rounded ${
@@ -70,12 +70,12 @@ function InputImage({
           <input {...getInputProps()} />
           {/* eslint-disable-next-line no-nested-ternary */}
           {selectedFile ? (
-            <div className="relative w-full h-full">
+            <div data-testid="image-file" className="relative w-full h-full">
               <Image
                 src={selectedFile}
                 alt="Selected file"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: 'contain' }}
               />
             </div>
           ) : isDragActive ? (
@@ -88,7 +88,7 @@ function InputImage({
                 width={24}
                 height={24}
               />
-              <p className="text-sm font-normal underline">
+              <p data-testid="input-label" className="text-sm font-normal underline">
                 Drag and drop image files or{' '}
                 <span className="text-blue-600">Browse</span>
               </p>
